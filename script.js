@@ -148,6 +148,8 @@ let generateShop = () => {
           <span class="dessert-item-price">$${price}</span>
         </div>
       </div>
+
+
       `;
     //use join to remove the invisible comma
   }).join(""));

@@ -175,7 +175,7 @@ shop.addEventListener('click', function(event) {
     let imageElement = parentCard.querySelector('.dessert-item-image');
     
     // Add the border class to the image
-    imageElement.classList.add('image-border');
+    imageElement.classList.add('image-border');q
 
   }
 });

@@ -14,12 +14,12 @@
 * {
     box-sizing: border-box;
     font-family: "Red Hat Text", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
     min-height: 100%;
     font-size: 16px;
     color: var(--Rose900);
@@ -32,14 +32,16 @@ body {
     padding: 0 1.5em;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-left: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
 /**
 * ! Product Card Styles are here
 **/
 
-h1 {
-    font-size: 3rem;
-    margin-left: 1.2rem;
-}
 
 .image-btn-container {
     display: flex;
@@ -73,7 +75,7 @@ h1 {
     flex-direction: column;
 }
 
-.border {
+.image-border {
     border: 2px solid var(--Red);
 }
 
@@ -94,12 +96,16 @@ h1 {
     transform: translate(-0%, -50%);
 }
 
-#minus-btn,
-#plus-btn {
-    border-radius: 20px;
+.hide {
+    display: none;
+}
+
+.bi-dash-circle,
+.bi-plus-circle {
     background-color: var(--Red);
     color: var(--Rose50);
-    border: 1px solid var(--Rose50);
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .dessert-item-title {
@@ -135,19 +141,17 @@ h1 {
     position: relative;
     background-color: var(--Rose50);
     width: 100%;
-    min-height: 400px;
     text-align: center;
-    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
 }
 
 .empty-cart h2 {
     text-align: left;
-    padding-left: 1.2rem;
+    padding: 1.2rem 0 0 1.2rem;
     color: var(--Red);
 }
 
@@ -161,10 +165,6 @@ h1 {
     text-align: center;
     color: var(--Rose400);
     font-weight: bold;
-}
-
-.empty-cart-hide {
-    display: none;
 }
 
 /**
@@ -181,14 +181,13 @@ h1 {
 
 .cart-selected h2 {
     color: var(--Red);
-    padding: 2rem 0rem 0rem 1.2rem;
+    padding: 2rem 1rem 1rem 1.2rem;
     text-align: left;
 }
 
 .cart-item {
     font-weight: bold;
-
-    width: 100%;
+    padding-left: 1.2rem;
 }
 
 .cart-selected-info {
@@ -254,6 +253,7 @@ h1 {
     margin: 2rem 0rem;
     border-radius: 10px;
     font-size: .8rem;
+    padding: 1rem;
 }
 
 .carbon-neutral p {

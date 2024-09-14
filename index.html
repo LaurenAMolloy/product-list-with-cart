@@ -9,15 +9,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" async></script>
+
 
   <title>Frontend Mentor | Product list with cart</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
+  <!-- Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
     rel="stylesheet">
 
 </head>
@@ -44,18 +45,16 @@
       <!-- Selected Cart Section -->
       <div class="cart-selected">
         <h2 class="cart-header">Your Cart (0)</h2>
-
+        <span class="cart-item">Classic Tiramisu</span>
         <div class="cart-selected-info" id="products-container">
-
-          <span class="cart-item">Classic Tiramisu</span>
-          <span class="cart-quantity" id="total-items">1x</span>
+          <span class="cart-quantity" id="number-of-items">1x</span>
           <span class="cart-price" id="price">@5.50</span>
           <span class="cart-pricexquantity" id="subtotal">$5.50</span>
-          <button id="remove-cart-btn">×</button>
+          <i class="bi bi-x-circle"></i>
         </div>
 
         <div class="cart-total">
-          <span class="cart-total-title" id="total-items">Order Total</span>
+          <span class="cart-total-title" id="order-total">Order Total</span>
           <strong class="cart-total-price">$0</strong>
         </div>
 
@@ -66,7 +65,7 @@
             <p>This is a <strong>carbon-neutral</strong> delivery</p>
           </div>
 
-          <button class="btn btn-purchase" type="button">Confirm Order</button>
+          <button class="btn-purchase" type="button">Confirm Order</button>
         </div>
         <!-- Selected Cart ends here -->
       </div>
@@ -77,6 +76,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>. -->
   </div>
+  <script src="script.js" async></script>
 </body>
 
 </html>

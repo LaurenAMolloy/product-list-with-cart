@@ -132,8 +132,8 @@ let generateShop = () => {
         <div class="image-btn-container">
 
           <img class="dessert-item-image" src="${image.mobile}" alt="waffle">
-          <button class="cart-button show-hide-cart"" type="button"><img src="/assets/images/icon-add-to-cart.svg"
-              alt="empty cart icon"><span >Add to cart</span></button>
+          <button class="cart-button show-hide-cart"" type="button"><i class="bi bi-cart"></i>
+              <alt="empty cart icon"><span >Add to cart</span></button>
 
             <div class="quantity-button buttons hide">
               <i onclick="decrement(${id})"  class="bi bi-dash-circle"></i>

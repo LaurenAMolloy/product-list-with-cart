@@ -70,6 +70,10 @@ h1 {
     align-items: center;
 }
 
+.bi-cart {
+    padding-right: .8rem;
+}
+
 .desert-item-details {
     display: flex;
     flex-direction: column;
